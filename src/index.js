@@ -1,10 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { App } from 'components/App';
-import './index.css';
+import ReactDOM from 'react-dom';
 
-ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+const croot = document.getElementById('root');
+
+const Prime = () => {
+  const third = 'stark';
+  return (
+    <ul>
+      <li>item1</li>
+      <li>item2</li>
+      <li>{third}</li>
+    </ul>
+  );
+};
+
+ReactDOM.render(<Prime />, croot);
