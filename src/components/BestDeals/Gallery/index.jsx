@@ -24,12 +24,6 @@ const galleryPics = [
   //   },
 ];
 
-const Gallery = () => {
-  return galleryPics.map(pic => (
-    <div key={pic.id}>
-      <img src={pic.houseOne} alt="Pic" />
-    </div>
-  ));
+export const Gallery = () => {
+  return (<div></div>);
 };
-
-export default Gallery;

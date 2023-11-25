@@ -9,7 +9,6 @@ class BestDeals extends Component {
   render() {
     return (
       <>
-        <p>Paragraph</p>
         <GalleryTabs />
         <Gallery />
       </>
