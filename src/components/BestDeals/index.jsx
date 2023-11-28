@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
+import GalleryButtons from './GalleryButtons';
 import GalleryTabs from './GalleryTabs';
-import Gallery from './Gallery';
 
 class BestDeals extends Component {
   // state: {}
@@ -9,8 +9,8 @@ class BestDeals extends Component {
   render() {
     return (
       <>
+        <GalleryButtons />
         <GalleryTabs />
-        <Gallery />
       </>
     );
   }

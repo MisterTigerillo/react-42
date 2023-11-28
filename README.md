@@ -85,7 +85,7 @@
 
 ```jsx
 <BrowserRouter basename="/your_repo_name/">
-  <App />
+          <App />
 </BrowserRouter>
 ```
 
