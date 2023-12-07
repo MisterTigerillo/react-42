@@ -1,5 +1,5 @@
 import React from 'react';
-import GlobalStyle from './GlobalCss/globalStyles';
+import GlobalStyle from './GlobalStyles/globalStyles';
 // import ReactDOM from 'react-dom';
 import BestDeals from './BestDeals';
 

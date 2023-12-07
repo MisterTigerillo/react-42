@@ -4,14 +4,16 @@ import { Wrapper } from './Wrapper.styled';
 import { Styled } from './BestDeals.styled';
 
 class BestDeals extends Component {
-  // state: {}
+  state: {visible: false,}
 
   render() {
-    const { GalleryButtons, GalleryTabs } = Styled;
+    const { GalleryButtons, GalleryTabs, Button } = Styled;
     return (
       <Wrapper>
-        <GalleryButtons>Buttons</GalleryButtons>
-        <GalleryTabs>Tabs</GalleryTabs>
+        <GalleryButtons>
+          <Button>Show</Button>
+        </GalleryButtons>
+        <GalleryTabs></GalleryTabs>
       </Wrapper>
     );
   }
