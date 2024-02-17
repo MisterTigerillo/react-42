@@ -11,21 +11,21 @@ const tabsCarousel = [
   ],
 
   [
-    { id: 'H4', label: 'Pic1', tags: ['Featured', '3D'] },
-    { id: 'H5', label: 'Pic2', tags: '3D' },
-    { id: 'H6', label: 'Pic3', tags: ['Featured', '3D'] },
-    { id: 'H7', label: 'Pic3', tags: '3D' },
-    { id: 'H8', label: 'Pic3', tags: ['Featured', '3D'] },
-    { id: 'H9', label: 'Pic3', tags: '3D' },
+    { id: 'H4', label: 'Pic4', tags: ['Featured', '3D'] },
+    { id: 'H5', label: 'Pic5', tags: '3D' },
+    { id: 'H6', label: 'Pic6', tags: ['Featured', '3D'] },
+    { id: 'H7', label: 'Pic7', tags: '3D' },
+    { id: 'H8', label: 'Pic8', tags: ['Featured', '3D'] },
+    { id: 'H9', label: 'Pic9', tags: '3D' },
   ],
 
   [
-    { id: 'H10', label: 'Pic1', tags: ['Featured', '3D'] },
-    { id: 'H11', label: 'Pic2', tags: '3D' },
+    { id: 'H10', label: 'Pic10', tags: ['Featured', '3D'] },
+    { id: 'H11', label: 'Pic11', tags: '3D' },
   ],
   [
-    { id: 'H12', label: 'Pic1', tags: ['Featured', '3D'] },
-    { id: 'H13', label: 'Pic2', tagOne: ['Featured', '3D'] },
+    { id: 'H12', label: 'Pic12', tags: ['Featured', '3D'] },
+    { id: 'H13', label: 'Pic13', tagOne: ['Featured', '3D'] },
   ],
 ];
 
@@ -52,7 +52,9 @@ class BestDeals extends Component {
           <button>Industrial Property</button>
         </Tabs>
         {/* <GalleryTabs></GalleryTabs> */}
-        {tabsCarousel.map(tab => console.log(tab))}
+        {tabsCarousel.map(tab =>
+          tab.map(({ id, label, tags }) => <div key={id}>{label}</div>),
+        )}
       </Wrapper>
     );
   }
